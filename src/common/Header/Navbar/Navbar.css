@@ -1,0 +1,50 @@
+nav{
+    color: var(--body-color);
+    background-color: var(--sec-bg);
+    border-top:.5px solid var(--border-color) ;
+    border-bottom: .5px solid var(--border-color);
+}
+
+nav hr{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.13);
+}
+
+
+
+nav ul li a{
+color: var(--body-color) !important;
+transition: .4s !important;
+text-transform: capitalize !important;
+}
+
+nav ul li a:hover{
+color:var(--main-color) !important;
+
+}
+
+nav ul li a.active{
+    color: var(--main-color) !important;
+}
+
+nav ul li:nth-of-type(5):hover .dropDown-menu {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+    color: var(--main-color);
+    margin-top: 2px;
+    border-top: none;
+    background-color: var(--body-bg);
+    z-index: 4;
+
+}
+nav ul li:nth-of-type(5) {
+    position: relative;
+   
+}
+
+nav ul li:nth-of-type(5):hover .dropDown-menu p:hover {
+    color: var(--main-color);
+    background-color: rgba(41, 41, 41, 0.075);
+
+}

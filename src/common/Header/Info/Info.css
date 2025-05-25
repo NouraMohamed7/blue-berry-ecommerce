@@ -1,0 +1,10 @@
+.Info {
+    background-color: #3d4750;
+    color: #fff !important;
+}
+
+.Info span {
+        cursor: pointer;
+}
+
+

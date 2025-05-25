@@ -1,0 +1,145 @@
+.Heading {
+    min-height: 80vh;
+    background-color: var(--sec-bg);
+    color: var(--body-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+}
+
+.Heading .container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.Heading .container .headingDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Heading .container .row {
+    align-items: center;
+    width: 100%;
+
+}
+
+
+.Heading .container .headingDetails button {
+    transition: .5s;
+    width: max-content;
+    margin-top: 10px;
+}
+
+.Heading svg path{
+    fill:var(--body-bg);
+}
+
+.Heading .container .headingDetails>span {
+    font-weight: 500;
+}
+
+.Heading .container .headingDetails p span::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -60px;
+    width: 80px;
+    height: 80px;
+    background: url('../../assets/images/shape-1.png') no-repeat center;
+
+}
+
+.Heading .container .headingDetails p {
+    font-family: var(--quicksand-bold);
+    font-size: 55px;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+
+.Heading .container .headingDetails p span {
+    width: max-content;
+    color: var(--main-color);
+    position: relative;
+}
+.container-img svg.svg-bg {
+    width: 100%;
+    height: 100%; 
+
+}
+.Heading .container .slide{
+    margin: 0 10px;
+    padding: 0 10px;
+    background-color: var(--sec-bg) !important;
+    z-index: 6;
+}
+
+ .Heading .container-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .Heading .container-img img {
+ 
+    position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 70%  !important;
+        max-width: 250px !important;
+        /* z-index:2; */
+   
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    .Heading .container .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Heading .container .headingDetails {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .Heading .container .headingDetails p {
+        font-size: 28px;
+    }
+
+    .Heading .container .headingDetails p span::after {
+        top: -40px;
+        right: -40px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .Heading .container-img {
+        padding: 0 !important;
+    }
+
+    .Heading .container-img img {
+        width: 70% !important;
+    }
+
+    .swiper-pagination-bullet {
+        width: 10px !important;
+        height: 8px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 20px !important;
+    }
+}
+

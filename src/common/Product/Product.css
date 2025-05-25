@@ -1,0 +1,41 @@
+.container-card{
+   color: var(--body-color);
+   
+}
+
+.product-icons {
+     position: absolute;
+     top: 88%;
+     left: 50%;
+     transform: translate(-50%, -50%) scale(0.8);
+     display: flex;
+     gap: 15px;
+     opacity: 0;
+     transition: 0.3s ease-in-out;
+     z-index: 3;
+  }
+
+  .container-card-img:hover .product-icons {
+     opacity: 1;
+     transform: translate(-50%, -50%) scale(1);
+  }
+
+  .product-icons button {
+     background-color: rgba(255, 255, 255, 0.95);
+     border: none;
+     border-radius: 50%;
+     padding: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: var(--main-color);
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+     cursor: pointer;
+     transition: 0.3s ease-in-out;
+  }
+
+  .product-icons button:hover {
+     background-color: var(--main-color);
+     color: #fff;
+     transform: scale(1.1);
+  }

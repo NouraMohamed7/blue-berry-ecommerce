@@ -1,0 +1,150 @@
+.cartList {
+    position: relative;
+    padding-top: 20px;
+    background-color: var(--body-bg);
+    color: var(--body-color);
+    min-height: 60vh;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.mycart>b {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--body-color);
+}
+
+
+.myCart1 {
+    background-color: var(--sec-bg);
+    color: var(--body-color);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px 15px;
+}
+
+
+.myCart1 div {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+
+.product-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+.total {
+    border: var(--border-color);
+    background-color: var(--sec-bg);
+    color: var(--body-color);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px 20px;
+}
+
+.total .small {
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    color: var(--body-color);
+}
+
+.total .fw-bold {
+    font-weight: 600;
+    color: var(--body-color);
+    font-size: 15px;
+    letter-spacing: 1.4px;
+}
+
+.closecartlist {
+    position: fixed;
+    font-size: 22px;
+    top: 10px;
+    left: 95%;
+    transform: translateX(-50%) scale(0);
+    opacity: 0;
+    color: brown;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.cartList:hover .closecartlist {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    visibility: visible;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .cartList {
+        padding-top: 15px;
+        min-height: auto;
+        margin: 0 10px;
+    }
+
+    .mycart>b {
+        font-size: 18px;
+    }
+
+    .myCart1 {
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+    .myCart1 div {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+
+    .product-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .total {
+        margin-top: 15px;
+        padding: 10px 15px;
+    }
+
+    .total .small {
+        font-size: 13px;
+    }
+
+    .total .fw-bold {
+        font-size: 14px;
+    }
+
+    .closecartlist {
+        font-size: 20px;
+        top: 8px;
+        left: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .myCart1 div {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+    }
+
+    .total .small {
+        font-size: 12px;
+    }
+
+    .total .fw-bold {
+        font-size: 13px;
+    }
+}

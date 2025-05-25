@@ -1,0 +1,104 @@
+.Deal {
+    background-color: var(--body-bg);
+    color: var(--body-color);
+    margin: 50px 10px;
+    padding: 30px 0;
+}
+
+.Deal .countDown {
+    padding: 0 10px;
+    background-color: var(--sec-bg);
+    color: var(--body-color);
+    border-radius: 18px;
+    justify-content: space-between;
+    width: 300px;
+    border: .2px solid var(--border-color);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.testy {
+    width: 100%;
+    color: #3d4750;
+    margin: 30px 10px;
+}
+
+.testy .testy2 {
+    width: 48%;
+    background-color: #fbf2e5;
+    padding: 20px 0;
+    border-radius: 40px;
+    position: relative;
+
+
+}
+
+.testy .testy1 {
+    width: 48%;
+    background-color: #f4dab4;
+    color: #3d4750;
+    padding: 20px 0;
+    border-radius: 40px;
+    position: relative;
+}
+
+.testy .detailTesty {
+    width: 40%;
+    margin-left: 50px;
+    align-items: flex-start;
+}
+
+.testy .detailTesty b {
+    color: #3d4750;
+    font-size: 27px;
+}
+
+.testy .detailTesty p {
+    color: #3d4750;
+    line-height: 1;
+}
+
+@media (max-width: 992px) {
+    .testy .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testy .testy1,
+    .testy .testy2 {
+        width: 90%;
+    }
+
+    .testy .detailTesty b {
+        font-size: 22px;
+    }
+
+    .testy .detailTesty p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .testy .row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .testy .testy1,
+    .testy .testy2 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .testy .detailTesty b {
+        font-size: 18px;
+    }
+
+    .testy .detailTesty p {
+        font-size: 12px;
+    }
+
+    .imgTesty img {
+        width: 100px !important;
+    }
+}
