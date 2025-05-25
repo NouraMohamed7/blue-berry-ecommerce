@@ -142,7 +142,7 @@ function App() {
           ),
         },
       ],
-      errorElement: <Loading status={"error"} />,
+    
     },
   ]);
 
