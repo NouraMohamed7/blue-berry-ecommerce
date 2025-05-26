@@ -16,12 +16,12 @@ function Arrivals() {
               All{" "}
             </NavLink>
             <NavLink to={"snakes"}> Snacks & Spices </NavLink>
-            <NavLink to={"friuts"}> Fruits </NavLink>
+            <NavLink to={"fruits"}> Fruits </NavLink>
             <NavLink to={"vege"}> Vegetables </NavLink>
           </div>
         </SectionHeading>
 
-        {/* This is where nested routes content will render */}
+        {/* Nested routes render here */}
         <Outlet />
       </div>
     </div>

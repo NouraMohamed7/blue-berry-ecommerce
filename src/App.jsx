@@ -1,3 +1,4 @@
+// App.jsx
 import React, { Suspense, lazy } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Loading from "./component/loading/Loading.jsx";
@@ -45,7 +46,7 @@ function App() {
             <Route path="arrivals" element={<Arrivals />}>
               <Route index element={<All />} />
               <Route path="snakes" element={<Nested1 />} />
-              <Route path="friuts" element={<Nested2 />} />
+              <Route path="fruits" element={<Nested2 />} />
               <Route path="vege" element={<Nested3 />} />
             </Route>
 
