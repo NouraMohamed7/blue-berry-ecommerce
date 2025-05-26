@@ -40,8 +40,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-
-            {/* هنا مسار arrivals والـ nested routes بتاعته */}
             <Route path="arrivals" element={<Arrivals />}>
               <Route index element={<All />} />
               <Route path="snakes" element={<Nested1 />} />
