@@ -4,7 +4,6 @@ import { displayProductContext } from "../../../../context/DisplayProductsContex
 
 function Nested1() {
   const { products } = useContext(displayProductContext);
-
   return (
     <div className="Nested1">
       <div className="container flex ">
@@ -14,6 +13,7 @@ function Nested1() {
               (ele, index) =>
                 ele.category === "snack & spices" && (
                   <Product ele={ele} key={index} />
+                  
                 )
             )}
           </div>

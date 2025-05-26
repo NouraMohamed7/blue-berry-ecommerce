@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { HiArrowUturnRight } from "react-icons/hi2";
 
 function Loading({ status }) {
+  console.log(true)
   return (
     <div className="w-100  flex " style={{ height: "100vh" }}>
       {status === "app" ? (
@@ -21,7 +22,11 @@ function Loading({ status }) {
         <>
           <Lottie animationData={error} loop={true} className="w-50 " />
           <br />
-          <HiArrowUturnRight/><Link to={'/'} style={{fontSize:'33' , textDecoration:'none'}}> back to home page </Link>
+          <HiArrowUturnRight />
+          <Link to={"/"} style={{ fontSize: "33", textDecoration: "none" }}>
+           
+            back to home page
+          </Link>
         </>
       ) : (
         ""

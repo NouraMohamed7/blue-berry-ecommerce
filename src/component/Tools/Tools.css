@@ -1,3 +1,6 @@
+.Tools{
+    z-index: 4000000;
+}
 .Tools .offcanvas{
     background-color: var(--body-bg);
     color: var(--body-color);

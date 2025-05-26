@@ -13,10 +13,10 @@ function Arrivals() {
         >
           <div className="nested-links shadow rounded p-2 ">
             <NavLink to={""} end>
-              All{" "}
+              All
             </NavLink>
             <NavLink to={"snakes"}> Snacks & Spices </NavLink>
-            <NavLink to={"fruits"}> Fruits </NavLink>
+            <NavLink to={"friuts"}> Fruits </NavLink>
             <NavLink to={"vege"}> Vegetables </NavLink>
           </div>
         </SectionHeading>

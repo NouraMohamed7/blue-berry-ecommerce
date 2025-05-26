@@ -32,12 +32,9 @@ function ProductsOfCategory() {
           <b className="fs-5">All Products</b>
           <div className="flex gap-3">
             <span>
-              Home
-              <FaArrowRight />
-            </span>
-            Categories
-            <FaArrowRight />
-            <span>fruits</span>
+              Home <FaArrowRight />
+            </span><span>products</span>
+            
           </div>
         </div>
       </div>

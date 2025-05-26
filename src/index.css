@@ -160,7 +160,7 @@ html {
   left: 30px;
   color: var(--main-color);
   cursor: pointer;
-  z-index: 999999;
+  z-index: 999999 !important;
   font-size: 40px;
   transition: opacity 0.3s ease;
   animation: toup 1s linear 2s infinite alternate;
