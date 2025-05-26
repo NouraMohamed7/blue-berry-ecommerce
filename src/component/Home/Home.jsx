@@ -9,12 +9,11 @@ import Footer from '../../common/Footer/Footer';
 function Home() {
   return (
     <div className="Home">
-      <Heading/>
       
+      <Heading/>
       <Explore/>
       <Deal/>
       <Arrivals/>
-      
       <Vendors/>
       
       
