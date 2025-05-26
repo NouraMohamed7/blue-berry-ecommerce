@@ -17,7 +17,7 @@ function Loading({ status }) {
           loop={true}
           className="w-50 "
         />
-      ) : status === "error" ? (
+      ) : status === "/error" ? (
         <>
           <Lottie animationData={error} loop={true} className="w-50 " />
           <br />

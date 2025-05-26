@@ -9,7 +9,10 @@
 }
 
 .About .container-about .details-about {
+    display: flex;
     align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .About .container-about .details-about h5 {
@@ -17,6 +20,7 @@
     font-weight: 600 !important;
     letter-spacing: 1.5px;
     font-size: 30px;
+    flex: 1 1 100%;
 }
 
 .About .container-about .details-about h5 span {
@@ -45,6 +49,7 @@
     background-color: var(--sec-bg);
     cursor: pointer;
     transition: 0.4s;
+    min-width: 150px;
 }
 
 .About .container-about .details-about div div:hover {
@@ -64,6 +69,10 @@
 
 .About .our-services {
     margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 .service {
@@ -75,6 +84,12 @@
     border-radius: 5px;
     background-color: var(--sec-bg);
     text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
 }
 
 .service img {
@@ -94,10 +109,11 @@
     margin-top: 10px;
 }
 
+/* Responsive */
 
 @media (max-width: 992px) {
     .About .container-about {
-        padding: 0 20px;
+        padding: 0 30px;
     }
 
     .service {
@@ -107,37 +123,44 @@
 }
 
 @media (max-width: 768px) {
+    .About .container-about {
+        padding: 0 20px;
+    }
+
+    .About .container-about .details-about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     .About .container-about .details-about h5 {
         font-size: 24px;
     }
 
     .About .container-about .details-about div div {
         padding: 15px 20px;
-    }
-
-    .About .container-about {
-        padding: 0 15px;
+        min-width: auto;
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
     }
 
     .service {
         width: 100%;
         padding: 20px;
     }
-
-    .About .container-about .details-about {
-        align-items: center;
-        text-align: center;
-    }
 }
 
 @media (max-width: 576px) {
     .About .container-about {
         margin: 60px 0;
-        padding: 0 10px;
+        padding: 0 15px;
     }
 
     .About .our-services {
         margin: 60px 0;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .About .container-about .details-about h5 {
@@ -151,6 +174,7 @@
 
     .About .container-about .details-about div div {
         padding: 10px 15px;
+        max-width: 100%;
     }
 
     .service {

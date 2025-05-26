@@ -17,13 +17,12 @@ function Arrivals() {
           mainTitle="Arrivals"
           decription="Shop online for new arrivals and get free shipping!"
         >
-              <div className="nested-links shadow rounded p-2 ">
-                  <NavLink to={""}>All </NavLink>
-                  <NavLink to={"snakes"}> Snacks & Spices </NavLink>
-                  <NavLink to={"friuts"}> Fruits </NavLink>
-                  <NavLink to={"vege"}> Vegetables </NavLink>
-                </div>
-
+          <div className="nested-links shadow rounded p-2 ">
+            <NavLink to={""}>All </NavLink>
+            <NavLink to={"snakes"}> Snacks & Spices </NavLink>
+            <NavLink to={"friuts"}> Fruits </NavLink>
+            <NavLink to={"vege"}> Vegetables </NavLink>
+          </div>
         </SectionHeading>
 
         <Outlet />

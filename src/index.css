@@ -34,6 +34,7 @@ main {
   height: fit-content !important;
   background-color: var(--sec-bg);
   color: var(--body-bg);
+  overflow: hidden;
 }
 
 .dark {
